@@ -1,0 +1,18 @@
+# pyproject.toml
+
+[build-system]
+requires = ["setuptools>=65.5.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "todo"
+version = "0.1.0"
+description = "A CLI application that allows you to keep track of tasks you need to complete"
+readme = "README.md"
+authors = [{ name = "Amit Verma", email = "amit.v@hotmail.com" }]
+dependencies = [
+    "click >= 8.1.7",
+]
+
+[project.scripts]
+todo = "todo.__main__:todo"
